@@ -75,7 +75,6 @@ body{
 }
 
 /* ── FRAME PAGE — 1012x540 dalam 1050px ── */
-/* Header & footer dibuang. Gambar penuh. */
 .frame-page{
   width:1050px;height:556px;
   display:flex;align-items:center;justify-content:center;
@@ -117,29 +116,6 @@ body{
 .div-tag{font-size:0.9rem;font-weight:700;color:#a8d8f0;font-style:italic;padding:10px 24px;border:1.5px solid rgba(168,216,240,0.4);border-radius:20px;}
 .div-pg{font-size:0.6rem;color:rgba(168,200,240,0.6);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:12px;}
 
-/* ── WATAK PAGE ── */
-.watak-page{
-  width:100%;height:100%;
-  background:linear-gradient(180deg,#1a8fc1 0%,#0d47a1 100%);
-  display:flex;flex-direction:column;
-  padding:14px 18px;gap:0;
-}
-.watak-title{font-family:"Bangers",cursive;font-size:1.8rem;color:#FFD700;letter-spacing:3px;margin-bottom:10px;text-align:center;flex-shrink:0;}
-.watak-grid{
-  display:grid;
-  grid-template-columns:1fr 1.3fr 1fr;
-  grid-template-rows:1fr 1fr;
-  gap:8px;flex:1;
-}
-.wk{border-radius:8px;overflow:hidden;background:#fff;display:flex;flex-direction:column;}
-.center-wk{grid-row:1/3;grid-column:2;}
-.wk-img{flex:1;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative;}
-.wk-img img{width:100%;height:100%;object-fit:cover;object-position:center top;}
-.wk-info{padding:4px 8px 6px;flex-shrink:0;}
-.wk-name{font-family:"Bangers",cursive;font-size:0.85rem;letter-spacing:1px;}
-.wk-desc{font-size:0.48rem;font-weight:700;color:#777;line-height:1.3;}
-.watak-pg{font-size:0.55rem;color:rgba(168,200,240,0.6);font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:right;margin-top:6px;flex-shrink:0;}
-
 /* ── NAV ── */
 .nav-bar{display:flex;align-items:center;gap:20px;}
 .nav-btn{
@@ -174,7 +150,6 @@ body{
 
 <div class="book-wrapper">
 
-  <!-- COVER -->
   <div class="cover-view" id="cover-view">
     <div class="cover-book" onclick="openBook()">
       <div style="font-size:3rem;">🎓</div>
@@ -183,11 +158,10 @@ body{
       <div class="cover-main-title">KOMIK SIKAP POSITIF<br>DI DALAM KAMPUS<br>& KATA-KATA MOTIVASI</div>
       <div class="cover-sub">-Adab Dulu Baru Ilmu-</div>
       <button class="cover-open-btn">BUKA BUKU ►</button>
-      <div class="cover-footer">29 Muka Surat — Klik untuk membuka</div>
+      <div class="cover-footer">37 Muka Surat — Klik untuk membuka</div>
     </div>
   </div>
 
-  <!-- PAGE VIEW -->
   <div class="page-view" id="page-view">
     <div class="a4-page" id="page-0" style="display:none;">
       <div class="cover-page">
@@ -196,10 +170,81 @@ body{
         <div class="cp-divider"></div>
         <div class="cp-title">KOMIK SIKAP POSITIF<br>DI DALAM KAMPUS<br>& KATA-KATA MOTIVASI</div>
         <div class="cp-sub">-Adab Dulu Baru Ilmu-</div>
-        <div class="cp-pg">ms. 01 / 29</div>
+        <div class="cp-pg">ms. 01 / 37</div>
       </div>
     </div>
-<div class="a4-page" id="page-1" style="display:none;">
+    
+    <div class="a4-page" id="page-1" style="display:none;">
+      <div class="frame-page">
+        <img src="Page-SidangRedaksi.png" alt="Sidang Redaksi"
+             style="width:100%;height:100%;object-fit:contain;display:block;"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
+                    gap:10px;width:100%;height:100%;background:#f5f5f5;">
+          <div style="font-size:2.5rem;">🖼️</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page-SidangRedaksi.jpg</div>
+          <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="a4-page" id="page-2" style="display:none;">
+      <div class="frame-page">
+        <img src="Page-KataAluan.png" alt="Kata Aluan"
+             style="width:100%;height:100%;object-fit:contain;display:block;"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
+                    gap:10px;width:100%;height:100%;background:#f5f5f5;">
+          <div style="font-size:2.5rem;">🖼️</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page-KataAluan.jpg</div>
+          <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="a4-page" id="page-3" style="display:none;">
+      <div class="frame-page">
+        <img src="Page-KataPengantar.png" alt="Kata Pengantar"
+             style="width:100%;height:100%;object-fit:contain;display:block;"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
+                    gap:10px;width:100%;height:100%;background:#f5f5f5;">
+          <div style="font-size:2.5rem;">🖼️</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page-KataPengantar.jpg</div>
+          <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="a4-page" id="page-4" style="display:none;">
+      <div class="frame-page">
+        <img src="Page-Prakata.png" alt="Prakata"
+             style="width:100%;height:100%;object-fit:contain;display:block;"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
+                    gap:10px;width:100%;height:100%;background:#f5f5f5;">
+          <div style="font-size:2.5rem;">🖼️</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page-Prakata.jpg</div>
+          <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="a4-page" id="page-5" style="display:none;">
+      <div class="frame-page">
+        <img src="Page-DNA_ADAB.png" alt="DNA ADAB"
+             style="width:100%;height:100%;object-fit:contain;display:block;"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
+                    gap:10px;width:100%;height:100%;background:#f5f5f5;">
+          <div style="font-size:2.5rem;">🖼️</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page-DNA_ADAB.jpg</div>
+          <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="a4-page" id="page-6" style="display:none;">
       <div class="frame-page">
         <img src="Page-watak utama2.jpg" alt="watak-page"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -207,108 +252,21 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_04.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page-watak utama2.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>       
-<!-- <div class="a4-page" id="page-1" style="display:none;">
-      <div class="watak-page">
-        <div class="watak-title">Watak Utama</div>
-        <div class="watak-grid">
-          <div class="wk" style="border-bottom:3px solid #2e86c1;">
-          <div class="wk-img">
-            <img src="UMAR.jpg" alt="Umar"
-                 style="width:100%;height:100%;object-fit:cover;object-position:center top;"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <div style="display:none;width:100%;height:100%;background:linear-gradient(135deg,#2e86c199,#2e86c1);
-                        flex-direction:column;align-items:center;justify-content:center;gap:4px;">
-              <div style="font-size:1.8rem;color:#fff;font-family:'Bangers',cursive;">U</div>
-              <div style="font-size:0.5rem;color:rgba(255,255,255,0.8);font-weight:700;">UMAR.jpg</div>
-            </div>
-          </div>
-          <div class="wk-info">
-            <div class="wk-name" style="color:#2e86c1;">Umar</div>
-            <div class="wk-desc">A foreign engineering student</div>
-          </div>
-        </div>
-          <div class="wk center-wk" style="border-bottom:3px solid #003366;">
-            <div class="wk-img">
-              <img src="AMINAH.jpg" alt="Aminah"
-                   style="width:100%;height:100%;object-fit:contain;object-position:center top;"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div style="display:none;width:100%;height:100%;background:linear-gradient(135deg,#00336699,#003366);
-                          flex-direction:column;align-items:center;justify-content:center;gap:4px;">
-                <div style="font-size:2rem;color:#fff;font-family:'Bangers',cursive;">A</div>
-                <div style="font-size:0.5rem;color:rgba(255,255,255,0.8);font-weight:700;">AMINAH.jpg</div>
-              </div>
-            </div>
-            <div class="wk-info">
-              <div class="wk-name" style="color:#003366;">Aminah</div>
-              <div class="wk-desc">A Malay data analytic student</div>
-            </div>
-          </div>
-          <div class="wk" style="border-bottom:3px solid #27ae60;">
-          <div class="wk-img">
-            <img src="SIEW LIN 2.0.jpg" alt="Siew Lin"
-                 style="width:100%;height:100%;object-fit:cover;object-position:center top;"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <div style="display:none;width:100%;height:100%;background:linear-gradient(135deg,#27ae6099,#27ae60);
-                        flex-direction:column;align-items:center;justify-content:center;gap:4px;">
-              <div style="font-size:1.8rem;color:#fff;font-family:'Bangers',cursive;">S</div>
-              <div style="font-size:0.5rem;color:rgba(255,255,255,0.8);font-weight:700;">SIEW LIN 2.0.jpg</div>
-            </div>
-          </div>
-          <div class="wk-info">
-            <div class="wk-name" style="color:#27ae60;">Siew Lin</div>
-            <div class="wk-desc">A Chinese science computer student</div>
-          </div>
-        </div>
-          <div class="wk" style="border-bottom:3px solid #e67e22;">
-          <div class="wk-img">
-            <img src="MUTHU.jpg" alt="Muthu"
-                 style="width:100%;height:auto;object-fit:contain;object-position:center top;"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <div style="display:none;width:100%;height:100%;background:linear-gradient(135deg,#e67e2299,#e67e22);
-                        flex-direction:column;align-items:center;justify-content:center;gap:4px;">
-              <div style="font-size:1.8rem;color:#fff;font-family:'Bangers',cursive;">M</div>
-              <div style="font-size:0.5rem;color:rgba(255,255,255,0.8);font-weight:700;">MUTHU.jpg</div>
-            </div>
-          </div>
-          <div class="wk-info">
-            <div class="wk-name" style="color:#e67e22;">Muthu</div>
-            <div class="wk-desc">An Indian project management student</div>
-          </div>
-        </div>
-          <div class="wk" style="border-bottom:3px solid #c0392b;">
-          <div class="wk-img">
-            <img src="PETER.jpg" alt="Peter"
-                 style="width:100%;height:auto;object-fit:contain;object-position:center top;"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <div style="display:none;width:100%;height:100%;background:linear-gradient(135deg,#c0392b99,#c0392b);
-                        flex-direction:column;align-items:center;justify-content:center;gap:4px;">
-              <div style="font-size:1.8rem;color:#fff;font-family:'Bangers',cursive;">P</div>
-              <div style="font-size:0.5rem;color:rgba(255,255,255,0.8);font-weight:700;">PETER.jpg</div>
-            </div>
-          </div>
-          <div class="wk-info">
-            <div class="wk-name" style="color:#c0392b;">Peter</div>
-            <div class="wk-desc">A Borneo engineering technology student</div>
-          </div>
-        </div>
-        </div>
-        <div class="watak-pg">ms. 02 / 29</div>
-      </div>
-    </div> -->
-<div class="a4-page" id="page-2" style="display:none;">
+
+    <div class="a4-page" id="page-7" style="display:none;">
       <div class="divider-page">
         <div class="div-title">SIKAP POSITIF DI DALAM KAMPUS</div>
         <div class='div-sub'>ADAB DULU BARU ILMU</div>
         <div class='div-tag'>MENGHARGAI KEMUDAHAN ADALAH AMALAN MULIA</div>
-        <div class="div-pg">ms. 03 / 29</div>
+        <div class="div-pg">ms. 08 / 37</div>
       </div>
     </div>
-<div class="a4-page" id="page-3" style="display:none;">
+    <div class="a4-page" id="page-8" style="display:none;">
       <div class="frame-page">
         <img src="Page4-Tepi tasik.jpg" alt="Frame 4"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -316,12 +274,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_04.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page4-Tepi tasik.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-4" style="display:none;">
+    <div class="a4-page" id="page-9" style="display:none;">
       <div class="frame-page">
         <img src="Page5-Tindakan kecil.jpg" alt="Frame 5"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -329,12 +287,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_05.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page5-Tindakan kecil.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-5" style="display:none;">
+    <div class="a4-page" id="page-10" style="display:none;">
       <div class="frame-page">
         <img src="Page6-Dapur siswa2.jpg" alt="Frame 6"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -342,12 +300,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_06.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page6-Dapur siswa2.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-6" style="display:none;">
+    <div class="a4-page" id="page-11" style="display:none;">
       <div class="frame-page">
         <img src="Page7-Cafe.jpg" alt="Frame 7"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -355,12 +313,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_07.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page7-Cafe.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-7" style="display:none;">
+    <div class="a4-page" id="page-12" style="display:none;">
       <div class="frame-page">
         <img src="Page8-Bilik hostel.jpg" alt="Frame 8"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -368,12 +326,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_08.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page8-Bilik hostel.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-8" style="display:none;">
+    <div class="a4-page" id="page-13" style="display:none;">
       <div class="frame-page">
         <img src="Page9-Bilik hostel2.jpg" alt="Frame 9"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -381,12 +339,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_09.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page9-Bilik hostel2.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-9" style="display:none;">
+    <div class="a4-page" id="page-14" style="display:none;">
       <div class="frame-page">
         <img src="Page10-Kebersihan bilik air.jpg" alt="Frame 10"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -394,20 +352,20 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_10.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page10-Kebersihan bilik air.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-10" style="display:none;">
+    <div class="a4-page" id="page-15" style="display:none;">
       <div class="divider-page">
         <div class="div-title">SIKAP POSITIF DI DALAM KAMPUS</div>
         <div class='div-sub'>ADAB DULU BARU ILMU</div>
         <div class='div-tag'>Jujur, bertanggungjawab, menghormati, dan berintegriti adalah sikap terpuji</div>
-        <div class="div-pg">ms. 11 / 29</div>
+        <div class="div-pg">ms. 16 / 37</div>
       </div>
     </div>
-<div class="a4-page" id="page-11" style="display:none;">
+    <div class="a4-page" id="page-16" style="display:none;">
       <div class="frame-page">
         <img src="Page12-Jumpa lecturer.jpg" alt="Frame 12"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -415,12 +373,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_12.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page12-Jumpa lecturer.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-12" style="display:none;">
+    <div class="a4-page" id="page-17" style="display:none;">
       <div class="frame-page">
         <img src="Page13-Cara berkomunikasi2.jpg" alt="Frame 13"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -428,12 +386,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_13.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page13-Cara berkomunikasi2.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-13" style="display:none;">
+    <div class="a4-page" id="page-18" style="display:none;">
       <div class="frame-page">
         <img src="Page14-Integriti dlm assignment2.jpg" alt="Frame 14"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -441,12 +399,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_14.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page14-Integriti dlm assignment2.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-14" style="display:none;">
+    <div class="a4-page" id="page-19" style="display:none;">
       <div class="frame-page">
         <img src="Page15-Adab bertanya.jpg" alt="Frame 15"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -454,12 +412,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_15.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page15-Adab bertanya.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-15" style="display:none;">
+    <div class="a4-page" id="page-20" style="display:none;">
       <div class="frame-page">
         <img src="Page16-ilmu yang berkat.jpg" alt="Frame 16"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -467,12 +425,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_16.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page16-ilmu yang berkat.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-16" style="display:none;">
+    <div class="a4-page" id="page-21" style="display:none;">
       <div class="frame-page">
         <img src="Page17-Never give up.jpg" alt="Frame 17"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -480,25 +438,25 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_17.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page17-Never give up.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-17" style="display:none;">
+    <div class="a4-page" id="page-22" style="display:none;">
       <div class="frame-page">
-        <img src="Page18-Pelajar yg matang.jpg" alt="Frame 18"
+        <img src="Page18-Pelajarygmatang.jpeg" alt="Frame 18"
              style="width:100%;height:100%;object-fit:contain;display:block;"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_18.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page18-Pelajar yg matang.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-18" style="display:none;">
+    <div class="a4-page" id="page-23" style="display:none;">
       <div class="frame-page">
         <img src="Page19-Holistik.jpg" alt="Frame 19"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -506,12 +464,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_19.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page19-Holistik.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-19" style="display:none;">
+    <div class="a4-page" id="page-24" style="display:none;">
       <div class="frame-page">
         <img src="Page20-Kemas sopan ke kelas.jpg" alt="Frame 20"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -519,12 +477,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_20.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page20-Kemas sopan ke kelas.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-20" style="display:none;">
+    <div class="a4-page" id="page-25" style="display:none;">
       <div class="frame-page">
         <img src="Page21-Kemas sopan sukan.jpg" alt="Frame 21"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -532,20 +490,20 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_21.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page21-Kemas sopan sukan.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-21" style="display:none;">
+    <div class="a4-page" id="page-26" style="display:none;">
       <div class="divider-page">
         <div class="div-title">TIADA PUTUS ASA DI DALAM KEHIDUPAN</div>
         <div class='div-sub'>SETIAP KESUSAHAN ADA KESENANGAN</div>
         <div class='div-tag'>KATA-KATA MOTIVASI</div>
-        <div class="div-pg">ms. 22 / 29</div>
+        <div class="div-pg">ms. 27 / 37</div>
       </div>
     </div>
-<div class="a4-page" id="page-22" style="display:none;">
+    <div class="a4-page" id="page-27" style="display:none;">
       <div class="frame-page">
         <img src="Page23-Berkayak.jpg" alt="Frame 23"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -553,12 +511,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_23.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page23-Berkayak.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-23" style="display:none;">
+    <div class="a4-page" id="page-28" style="display:none;">
       <div class="frame-page">
         <img src="Page24-ATV.jpg" alt="Frame 24"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -566,25 +524,25 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_24.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page24-ATV.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-24" style="display:none;">
+    <div class="a4-page" id="page-29" style="display:none;">
       <div class="frame-page">
-        <img src="Page25-Mendaki bukit.jpg" alt="Frame 25"
+        <img src="Page25-Mendaki bukit.jpeg" alt="Frame 25"
              style="width:100%;height:100%;object-fit:contain;display:block;"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_25.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page25-Mendaki bukit.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-25" style="display:none;">
+    <div class="a4-page" id="page-30" style="display:none;">
       <div class="frame-page">
         <img src="Page26-Flying fox.jpg" alt="Frame 26"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -592,12 +550,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_26.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page26-Flying fox.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-26" style="display:none;">
+    <div class="a4-page" id="page-31" style="display:none;">
       <div class="frame-page">
         <img src="Page27-Memanah.jpg" alt="Frame 27"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -605,12 +563,12 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_27.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page27-Memanah.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-27" style="display:none;">
+    <div class="a4-page" id="page-32" style="display:none;">
       <div class="frame-page">
         <img src="Page28-Ais krim.jpg" alt="Frame 28"
              style="width:100%;height:100%;object-fit:contain;display:block;"
@@ -618,12 +576,55 @@ body{
         <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
                     gap:10px;width:100%;height:100%;background:#f5f5f5;">
           <div style="font-size:2.5rem;">🖼️</div>
-          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: frame_28.jpg</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page28-Ais krim.jpg</div>
           <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
         </div>
       </div>
     </div>
-<div class="a4-page" id="page-28" style="display:none;">
+
+    <div class="a4-page" id="page-33" style="display:none;">
+      <div class="frame-page">
+        <img src="Page29-Dadah1.png" alt="Jauhi Dadah 1"
+             style="width:100%;height:100%;object-fit:contain;display:block;"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
+                    gap:10px;width:100%;height:100%;background:#f5f5f5;">
+          <div style="font-size:2.5rem;">🖼️</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page29-Dadah1.jpg</div>
+          <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="a4-page" id="page-34" style="display:none;">
+      <div class="frame-page">
+        <img src="Page30-Dadah2.png" alt="Jauhi Dadah 2"
+             style="width:100%;height:100%;object-fit:contain;display:block;"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
+                    gap:10px;width:100%;height:100%;background:#f5f5f5;">
+          <div style="font-size:2.5rem;">🖼️</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page30-Dadah2.jpg</div>
+          <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="a4-page" id="page-35" style="display:none;">
+      <div class="frame-page">
+        <img src="Page31-Dadah3.png" alt="Jauhi Dadah 3"
+             style="width:100%;height:100%;object-fit:contain;display:block;"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div style="display:none;flex-direction:column;align-items:center;justify-content:center;
+                    gap:10px;width:100%;height:100%;background:#f5f5f5;">
+          <div style="font-size:2.5rem;">🖼️</div>
+          <div style="font-size:0.85rem;font-weight:900;color:#003366;text-transform:uppercase;">Letak gambar: Page31-Dadah3.jpg</div>
+          <div style="font-size:0.65rem;color:#aaa;">Saiz disyorkan: 1012 × 540 px</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="a4-page" id="page-36" style="display:none;">
       <div class="cover-page">
         <div style="font-size:3.5rem;">🎉</div>
         <div class="cp-title" style="font-size:3.5rem;">TAMAT</div>
@@ -631,7 +632,7 @@ body{
         <div class="cp-sub">SEMOGA BERMANFAAT</div>
         <div class="cp-divider"></div>
         <div class="cp-title" style="font-size:1.5rem;color:#FFD700;">ADAB DULU BARU ILMU</div>
-        <div class="cp-pg">ms. 29 / 29</div>
+        <div class="cp-pg">ms. 37 / 37</div>
       </div>
     </div>
   </div>
@@ -640,14 +641,14 @@ body{
 
 <div class="nav-bar" id="nav-bar" style="display:none;">
   <button class="nav-btn" id="btn-prev" onclick="prevPage()" disabled>◄ SEBELUM</button>
-  <div class="pg-indicator" id="pg-indicator">ms. 01 / 29</div>
+  <div class="pg-indicator" id="pg-indicator">ms. 01 / 37</div>
   <button class="nav-btn" id="btn-next" onclick="nextPage()">SETERUS ►</button>
 </div>
 <div class="hint" id="hint" style="display:none;">← → papan kekunci untuk navigasi</div>
 
 <script>
   let current=0;
-  const total=29;
+  const total=37;
   function openBook(){
     document.getElementById('cover-view').style.display='none';
     document.getElementById('page-view').style.display='block';
